@@ -1,0 +1,104 @@
+body{
+  background-color: #F0F0F0;
+  font-family: 'Roboto', sans-serif;
+}
+nav{
+  background-color: #667937;
+  text-align: center;
+  color:white;
+  float: left;
+  width: 100%;
+}
+nav a{
+  color: white;
+  float: left;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition:.3s;
+  padding: 14px 20px;
+}
+
+nav a:hover{
+  background-color: white;
+  color: black;
+}
+
+table{
+  background-color: #ffffee;
+  margin-left: 25%;
+  width: 50%;
+  transform: translateY(10%);
+}
+table, th, td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td{
+  padding: 10px;
+}
+td{
+  text-transform: uppercase;
+}
+form{
+  position: relative;
+  top: 30vh;
+  margin: 0 auto;
+  width: 250px;
+  height: 250px;
+}
+iframe, .twitter-tweet{
+  position: relative !important;
+  border: 12px solid white;
+  margin: 10px;
+  left: 35%;
+
+}
+
+
+.courseNum{
+  position: relative;
+  text-align: center;
+  line-height: 2px;
+}
+.course{
+  font-size: 10px;
+  padding: 1px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  transition: .4s;
+  font-weight: 900;
+  background-color: rgba(102, 121, 55, 0.2);
+  color: #00213a;
+}
+
+.time,.location{
+  line-height: 1px;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+
+.submitBtn{
+  transform: translateX(50%);
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+  border-style: outset;
+  border-color: #0066A2;
+  height: 30px;
+  width: 100px;
+  text-shadow:none;
+  transition: .3s;
+}
+.submitBtn:hover{
+  background: #667937;
+  color: white;
+  cursor: pointer;
+
+}
