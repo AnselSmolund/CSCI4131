@@ -1,0 +1,21 @@
+p{
+  text-align: center;
+  color: rgb(255,0,0);
+  font-family: 'Faster One', cursive;
+  font-size: 24px;
+
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 3px;
+}
+div{
+  text-align: center;
+  background-color: yellow;
+  padding: 10px;
+  font-family: 'Press Start 2P', cursive;
+  color: rgba(255, 0, 127, 1);
+}

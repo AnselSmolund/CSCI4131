@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSCI 4131 HW 01 </title>
+  <link rel = "stylesheet" href = "styles.css">
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script src = "tictactoe.js"></script>
+</head>
+<body>
+
+
+  <nav>
+    <a href = "home.html"> My Calendar </a>
+    <a href = "form.html"> Form Input </a>
+    <a href = "widgets.html"> Widgets </a>
+  </nav>
+  <iframe class = "youtube" width="400" height="240"
+  src="https://www.youtube.com/embed/videoseries?list=PLRqwX-V7Uu6ZiZxtDDRCi6uhfTH4FilpH"
+  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+  </iframe>
+  <a class="twitter-timeline" data-height = "350" data-width="500" href="https://twitter.com/elonmusk?ref_src=twsrc%5Etfw">Tweets by elonmusk</a>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  <div class = "tictac">
+
+    <h1> ⭕️ TIC-TAC-TOE ❌ </h1>
+    <form name = "ticForm" onsubmit = "return move()">
+      Enter Cell: <input name = "cell" type = "text"></input> <br><br>
+      Select Cell Color: <select name = "color">
+        <option value = "red"> Red(o) </option>
+        <option value = "blue"> Blue(x) </option>
+      </select>
+      <input class = "ticSubmit" type = "submit">
+
+    </form>
+
+    <table id = "tictable" class = "tictable" cellpadding = "10">
+      <tr>
+        <td id = "1"> 1 </td>
+        <td id = "2"> 2 </td>
+        <td id = "3"> 3</td>
+      </tr>
+      <tr>
+        <td id = "4"> 4 </td>
+        <td id = "5"> 5 </td>
+        <td id = "6"> 6 </td>
+      </tr>
+      <tr>
+        <td id = "7"> 7 </td>
+        <td id = "8"> 8</td>
+        <td id = "9"> 9</td>
+      </tr>
+    </table>
+    <button onclick="resetGame()"class = "ticSubmit" id = "resetButton"> Reset </button>
+    <h2 class = "ticwinner" id = "winner"></h2>
+
+
+  </div>
+
+
+
+
+
+</body>
+</html>

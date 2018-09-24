@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSCI 4131 Exercise 2: Fun with CSS</title>
+  <meta charset="UTF-8">
+  <link rel = "stylesheet" type = "text/css" href = "mystyle.css">
+<link href="https://fonts.googleapis.com/css?family=Faster+One|Open+Sans|Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+  <p id = "top"> Here is a paragraph </p>
+  <div>
+    <h1> Here is a heading within a div</h1>
+
+    <input id = "input" value="Input"type = "text"></input>
+    <input id = "submitBtn" type = "button" value ="submit"></input>
+  </div>
+  <script>
+    document.getElementById("submitBtn").addEventListener("click",
+      function(){
+        let val = document.getElementById('input').value;
+        document.getElementById('top').innerHTML += val;
+      }
+    );
+  </script>
+
+</body>
+
+</html>

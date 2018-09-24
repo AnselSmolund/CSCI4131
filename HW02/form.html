@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSCI 4131 HW 01 </title>
+  <link rel = "stylesheet" href = "styles.css">
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script>
+  function validate(){
+    if(document.forms["eventForm"]["eventname"].value == "" ||
+       document.forms["eventForm"]["starttime"].value == ""||
+       document.forms["eventForm"]["endtime"].value == ""||
+       document.forms["eventForm"]["location"].value == ""||
+       document.forms["eventForm"]["day"].value == ""){
+      alert("All fields are mandatory");
+      return false;
+    }
+    var eventname = document.forms["eventForm"]["eventname"].value;
+    var location = document.forms["eventForm"]["location"].value;
+    var str = /^[0-9a-zA-Z ]+$/i;
+    if(!eventname.match(str) || !location.match(str)){
+      alert("Name of the event and the location must be alphanumeric");
+      return false;
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a href = "home.html"> My Calendar </a>
+    <a href = "form.html"> Form Input </a>
+    <a href = "widgets.html"> Widgets </a>
+  </nav>
+  <form name = "eventForm" onsubmit = "return validate()" action="https://www-users.cs.umn.edu/~shaw0162/index.php">
+    Event Name: <input type="text" name="eventname" ><br><br>
+    Start Time: <input id="starttime"type="time" name = "starttime"><br><br>
+    End Time: <input type = "time" name = "endtime"><br><br>
+    Location: <input type="text" name="location" ><br><br>
+    Day of The Week: <select name = "day">
+       <option value="monday">Monday</option>
+       <option value="tuesday">Tuesday</option>
+       <option value="wednesday">Wednesday</option>
+       <option value="thursday">Thursday</option>
+       <option value="friday">Friday</option>
+    </select> <br> <br>
+    <input class = "submitBtn" type = "submit">
+
+  </form>
+
+</body>
+</html>
