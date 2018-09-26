@@ -68,23 +68,40 @@ form{
   width: 250px;
   height: 250px;
 }
-iframe{
-  position: relative !important;
-  border: 12px solid white;
-  margin: 10px;
 
+.widget-container{
+  position: absolute;
+  margin-left: 0;
+  text-align: center;
+  align-items: center;
+  width: 45vw;
+  height: 80vh;
+  top: 10%;
 }
-.twitter-timeline{
+.widget-container iframe{
+  position: relative !important;
+  width: 75%;
+  margin: 0 auto;
+  height: 50%;
+}
+.widget-container .twitter-timeline{
+  position: relative !important;
+  width: 75%;
+  margin: 0 auto;
+  height: 50%;
+}
+
+/* .twitter-timeline{
   position: relative !important;
   display: block !important;
-}
+} */
 .tictac{
   position: absolute;
   display: inline;
   top: 10%;
-  right: 20%;
-  width: 500px;
-  height: 600px;
+  right: 10%;
+  width: 45vw;
+  height: 80vh;
   background-color: rgba(0,0,0,0.4);
   text-align: center;
 }
@@ -97,8 +114,8 @@ iframe{
   background-color: rgba(0,0,127,0.3);
   position: relative;
   margin: 0 auto;
-  width: 400px;
-  height: 250px;
+  width: 80%;
+  height: 40%;
   top: 0px !important;
   transform: translateY(-50%);
   color: white;
