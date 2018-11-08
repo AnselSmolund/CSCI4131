@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Calendar File </title>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<style>
+  body{
+    background-color: #F0F0F0;
+    font-family: 'Roboto', sans-serif;
+  }
+  table{
+    background-color: #ffffee;
+    margin-left: 25%;
+    width: 50%;
+    transform: translateY(10%);
+  }
+  table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th, td{
+    padding: 10px;
+  }
+  td{
+    text-transform: uppercase;
+  }
+  .courseNum{
+    position: relative;
+    text-align: center;
+    line-height: 2px;
+  }
+  .course{
+    font-size: 10px;
+    padding: 1px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    transition: .4s;
+    font-weight: 900;
+    background-color: rgba(102, 121, 55, 0.2);
+    color: #00213a;
+  }
+  .time,.location{
+    line-height: 1px;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-align: center;
+  }
+  .bottom-links{
+    text-align: center;
+  }
+  .bottom-links a{
+    font-size: 20px;
+    text-decoration: none;
+    margin: 20px;
+  }
+</style>
+<body>
+  <table>
+    <tr>
+      <th class = "day"> Monday </th>
+      <td>
+        <p class = "courseNum"> ACCT 3001 </p>
+        <p class = "course"> Intro to Managerial Accounting </p>
+        <p class = "time"> 11:15 AM - 12:30 PM </p>
+        <p class = "location"><a href = "http://campusmaps.umn.edu/herbert-m-hanson-jr-hall" target = "blank_"> Hanson Hall 1-104 </a></p>
+      </td>
+      <td>
+        <p class = "courseNum"> CSCI 4131 </p>
+        <p class = "course"> Internet Programming </p>
+        <p class = "time"> 2:30 PM - 3:45 PM </p>
+        <p class = "location"><a href = "http://campusmaps.umn.edu/anderson-hall" target = "blank_"> Anderson Hall 370 </a></p>
+      </td>
+    </tr>
+    <tr>
+      <th class = "day"> Tuesday </th>
+      <td>
+        <p class = "courseNum"> CSCI 3081W </p>
+        <p class = "course"> Program Design & Development </p>
+        <p class = "time"> 1:00 PM - 2:15 PM </p>
+        <p class = "location"><a href = "http://campusmaps.umn.edu/robert-h-bruininks-hall" target = "blank_"> Bruininks Hall 312 </a></p>
+      </td>
+      <td>
+        <p class = "courseNum"> CSCI 4511W </p>
+        <p class = "course"> Introduction to Artifical Intelligence </p>
+        <p class = "time"> 4:00 PM - 5:15 PM </p>
+        <p class = "location"><a href = "http://campusmaps.umn.edu/fraser-hall" target = "blank_"> Fraser Hall 101 </a></p>
+      </td>
+    </tr>
+    <tr>
+      <th class = "day"> Wednesday </th>
+      <td>
+        <p class = "courseNum"> ACCT 3001 </p>
+        <p class = "course"> Intro to Managerial Accounting </p>
+        <p class = "time"> 11:15 AM - 12:30 PM </p>
+        <p class = "location"><a href = "http://campusmaps.umn.edu/herbert-m-hanson-jr-hall" target = "blank_"> Hanson Hall 1-104</a></p>
+      </td>
+      <td>
+        <p class = "courseNum"> CSCI 4131 </p>
+        <p class = "course"> Internet Programming </p>
+        <p class = "time"> 2:30 PM - 3:45 PM </p>
+        <p class = "location"><a href = "http://campusmaps.umn.edu/anderson-hall" target = "blank_"> Anderson Hall 370 </a></p>
+      </td>
+    </tr>
+    <tr>
+      <th class = "day"> Thursday </th>
+      <td>
+        <p class = "courseNum"> CSCI 3081W </p>
+        <p class = "course"> Program Design & Development </p>
+        <p class = "time"> 1:00 PM - 2:15 PM </p>
+        <p class = "location"><a href = "http://campusmaps.umn.edu/robert-h-bruininks-hall" target = "blank_"> Bruininks Hall 312 </a></p>
+      </td>
+      <td>
+        <p class = "courseNum"> CSCI 4511W </p>
+        <p class = "course"> Introduction to Artifical Intelligence </p>
+        <p class = "time"> 4:00 PM - 5:15 PM </p>
+        <p class = "location"><a href = "http://campusmaps.umn.edu/fraser-hall" target = "blank_"> Fraser Hall 101 </a></p>
+      </td>
+    </tr>
+    <tr>
+      <th class = "day"> Friday </th>
+      <td>
+        <p class = "courseNum"> CSCI 3081W (discussion) </p>
+        <p class = "course"> Program Design & Development </p>
+        <p class = "time"> 12:20 PM - 1:10 PM </p>
+        <p class = "location"><a href = "http://campusmaps.umn.edu/kenneth-h-keller-hall" target = "blank_"> Keller Hall 1-250 </a></p>
+      </td>
+      <td>
+        <p class = "courseNum"> Afternoon Free </p>
+      </td>
+    </tr>
+  </table>
+  <br>
+  <br>
+  <br>
+  <nav class = "bottom-links">
+    <a href = "displayPix.html">Display Goldys Image</a>
+    <a href = "psAnnouncement.html">Display Goldys Announcement</a>
+    <a href = "Goldy_N_Announce.html">Display Goldys Image And Announcement</a>
+  </nav>
+</body>
+</html>

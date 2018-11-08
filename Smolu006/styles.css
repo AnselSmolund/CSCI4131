@@ -1,0 +1,189 @@
+body{
+  background-color: #F0F0F0;
+  font-family: 'Roboto', sans-serif;
+}
+nav{
+  background-color: #667937;
+  text-align: center;
+  color:white;
+  float: left;
+  width: 100%;
+}
+nav a{
+  color: white;
+  float: left;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition:.3s;
+  padding: 14px 20px;
+}
+
+nav a:hover{
+  background-color: white;
+  color: black;
+}
+
+table{
+  background-color: #ffffee;
+  width: 50%;
+  transform: translateY(5%);
+}
+table, th, td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td{
+  /* padding: 4px; */
+  font-size: 12px;
+}
+td{
+  text-transform: uppercase;
+}
+td > img{
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+  transition: .3s ease-out;
+  opacity: 0;
+}
+td:hover img{
+  opacity: 1;
+
+
+}
+.full-img{
+  position: absolute;
+  right: 8px;
+  top: 25%;
+  width: 49vw;
+}
+form{
+  position: relative;
+  top: 30vh;
+  margin: 0 auto;
+  width: 250px;
+  height: 250px;
+}
+
+.widget-container{
+  position: absolute;
+  margin-left: 0;
+  text-align: center;
+  align-items: center;
+  width: 45vw;
+  height: 80vh;
+  top: 10%;
+}
+.widget-container iframe{
+  position: relative !important;
+  width: 75%;
+  margin: 0 auto;
+  height: 50%;
+}
+.widget-container .twitter-timeline{
+  position: relative !important;
+  width: 75%;
+  margin: 0 auto;
+  height: 50%;
+}
+
+/* .twitter-timeline{
+  position: relative !important;
+  display: block !important;
+} */
+.tictac{
+  position: absolute;
+  display: inline;
+  top: 10%;
+  right: 10%;
+  width: 45vw;
+  height: 80vh;
+  background-color: rgba(0,0,0,0.4);
+  text-align: center;
+}
+.tictac > form{
+  top:0;
+  text-align: center;
+}
+.tictable{
+  table-layout: fixed;
+  background-color: rgba(0,0,127,0.3);
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+  height: 40%;
+  top: 0px !important;
+  transform: translateY(-50%);
+  color: white;
+}
+.ticSubmit{
+  transform:  translateY(45%);
+  border-style: outset;
+  border-color: #0066A2;
+  height: 30px;
+  width: 100px;
+  text-shadow:none;
+  transition: .3s;
+}
+.ticSubmit:hover{
+  background: #667937;
+  color: white;
+  cursor: pointer;
+}
+.ticwinner{
+  transform: translateY(-200%);
+  font-size: 50px;
+}
+#resetButton{
+  position: absolute;
+  top: 470px;
+  transform: translateX(-45%);
+}
+
+.courseNum{
+  position: relative;
+  text-align: center;
+  line-height: 2px;
+}
+.course{
+  font-size: 10px;
+  padding: 1px;
+  letter-spacing: 1px;
+  text-align: center;
+  transition: .4s;
+  font-weight: 900;
+  background-color: rgba(102, 121, 55, 0.2);
+  color: #00213a;
+}
+
+.time,.location{
+  line-height: 1px;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+
+.submitBtn{
+  transform: translateX(50%);
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+  border-style: outset;
+  border-color: #0066A2;
+  height: 30px;
+  width: 100px;
+  text-shadow:none;
+  transition: .3s;
+}
+.submitBtn:hover{
+  background: #667937;
+  color: white;
+  cursor: pointer;
+
+}

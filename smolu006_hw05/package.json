@@ -1,0 +1,15 @@
+{
+  "name": "smolu006_hw05",
+  "version": "1.0.0",
+  "description": "Assignment 5",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "smolu006",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "jsdom": "^13.0.0"
+  }
+}

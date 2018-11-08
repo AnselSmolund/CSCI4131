@@ -1,0 +1,326 @@
+body{
+  background-color: #F0F0F0;
+  font-family: 'Roboto', sans-serif;
+}
+nav{
+  background-color: #667937;
+  text-align: center;
+  color:white;
+  float: left;
+  width: 100%;
+}
+nav a{
+  color: white;
+  float: left;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition:.3s;
+  padding: 14px 20px;
+}
+
+nav a:hover{
+  background-color: white;
+  color: black;
+}
+#google_translate_element{
+  position: absolute;
+  top:50px;
+
+}
+#map {
+  position: relative;
+  margin-top: 20px;
+  height: 600px;
+  width: 52vw;
+  margin-left: 20%;
+}
+
+.map-input{
+  position: absolute;
+  margin-top: 20px;
+  text-transform: uppercase;
+  right: 5%;
+  font-size: 14px;
+  text-align: left;
+  width: 22%;
+  height: 600px;
+  overflow: auto;
+  background: rgba(255,255,255,.7);
+}
+.map-input select{
+  width: 50%;
+  background: transparent;
+  line-height: 1;
+  position: relative;
+  font-size: 1em;
+}
+.map-input #radius{
+  background: transparent;
+  transform: translateX(18%);
+  border-radius: 4px;
+  margin-right: 20px;
+  font-size: 1em;
+  position: relative;
+  width: 30%;
+}
+#radius:focus{
+  outline:none;
+}
+.map-input #otherPlace{
+  width: 50%;
+  margin: 5px;
+  margin-bottom: 15px;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  background: transparent;
+  position: relative;
+  font-size: 1em;
+  transform: translateX(20%);
+  border: none;
+  transition: .3s ease all;
+}
+
+#otherPlace:focus{
+  outline:0;
+}
+#otherPlace:enabled{
+  border-bottom: 3px solid black;
+}
+#otherPlace:disabled{
+  border-bottom: 1px solid black;
+  background-color: rgba(0,0,0,.2);
+}
+#placeSearchBtn{
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  transform: translateX(50%);
+  background: transparent;
+}
+#placeSearchBtn:hover{
+  cursor: pointer;
+  color: white;
+  background: rgba(0,0,0,.5);
+}
+#placeSearchBtn:focus{
+  outline:none;
+}
+#goBtn{
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  transform: translateX(80%);
+  background: transparent;
+}
+#goBtn:hover{
+  cursor: pointer;
+  color: white;
+  background: rgba(0,0,0,.5);
+}
+#goBtn:focus{
+  outline:none;
+}
+.map-input1{
+  position: relative;
+  top: 20px;
+
+}
+.map-input2{
+  padding-top: 10px;
+  border-top: 1px solid black;
+  transform: translateY(-120%);
+}
+#directionToPlace{
+  width: 48%;
+  margin: 5px;
+  background: transparent;
+  position: relative;
+  font-size: 1em;
+  border-radius: 4px;
+}
+
+.map-input input[type=radio]:hover{
+  cursor: pointer;
+
+}
+
+
+input:focus{
+  outline:none;
+}
+
+.schedule-table{
+  background-color: #ffffee !important;
+  width: 60%;
+  transform: translateY(2%);
+  margin-left: auto;
+  margin-right: auto;
+}
+.schedule-table th{
+  font-weight: lighter;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.schedule-table, .schedule-table th, .schedule-table td{
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-transform: uppercase;
+}
+.schedule-table th, .schedule-table td{
+  padding: 0;
+}
+#routeSteps{
+  font-size: 12px;
+  position: absolute;
+  margin-top: 10px;
+  line-height: 30px;
+  width: 19%;
+  max-height: 600px;
+  overflow: auto;
+  float: left;
+}
+#routeSteps select{
+  width: 100%;
+}
+#routeSteps i{
+  font-size: 10px;
+}
+
+form{
+  position: relative;
+  top: 30vh;
+  margin: 0 auto;
+  width: 300px;
+  height: 250px;
+}
+form input{
+  border: 1px solid black;
+}
+
+.widget-container{
+  position: absolute;
+  margin-left: 0;
+  text-align: center;
+  align-items: center;
+  width: 45vw;
+  height: 80vh;
+  top: 10%;
+}
+.widget-container iframe{
+  position: relative !important;
+  width: 75%;
+  margin: 0 auto;
+  height: 50%;
+}
+.widget-container .twitter-timeline{
+  position: relative !important;
+  width: 75%;
+  margin: 0 auto;
+  height: 50%;
+}
+
+/* .twitter-timeline{
+  position: relative !important;
+  display: block !important;
+} */
+.tictac{
+  position: absolute;
+  display: inline;
+  top: 10%;
+  right: 10%;
+  width: 45vw;
+  height: 80vh;
+  background-color: rgba(0,0,0,0.4);
+  text-align: center;
+}
+.tictac > form{
+  top:0;
+  text-align: center;
+}
+.tictable{
+  table-layout: fixed;
+  background-color: rgba(0,0,127,0.3);
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+  height: 40%;
+  top: 0px !important;
+  transform: translateY(-50%);
+  color: white;
+}
+.ticSubmit{
+  transform:  translateY(45%);
+  border-style: outset;
+  border-color: #0066A2;
+  height: 30px;
+  width: 100px;
+  text-shadow:none;
+  transition: .3s;
+}
+#tictable, #tictable th, #tictable td{
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-transform: uppercase;
+}
+.ticSubmit:hover{
+  background: #667937;
+  color: white;
+  cursor: pointer;
+}
+.ticwinner{
+  transform: translateY(-200%);
+  font-size: 50px;
+}
+#resetButton{
+  position: absolute;
+  top: 470px;
+  transform: translateX(-45%);
+}
+
+.courseNum{
+  font-size: 12px;
+  margin: 5px;
+  position: relative;
+  text-align: center;
+}
+.course{
+  font-size: 10px;
+  text-align: center;
+  transition: .4s;
+  font-weight: 700;
+  background-color: rgba(102, 121, 55, 0.2);
+  color: #00213a;
+}
+
+.time,.location{
+  font-size: 12px;
+  text-align: center;
+}
+
+.submitBtn{
+  transform: translateX(100%);
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+  border-style: outset;
+  border-color: #0066A2;
+  height: 30px;
+  width: 80px;
+  text-shadow:none;
+  transition: .3s;
+}
+.submitBtn:hover{
+  background: #667937;
+  color: white;
+  cursor: pointer;
+
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lecture 15 exercise </title>
+  <meta charset="UTF-8">
+
+</head>
+<body>
+  <h1> Lecture 15 exercise </h1>
+  <p> Ansel Smolund Smolu006 </p>
+  <div id = "locations">
+  </div>
+  <script>
+    var text = '{"locations":[' +
+      '{"lat1":"44.95045","lon1":"-93.345002" },' +
+      '{"lat2":"44.95045","lon2":"-93.345002" }]}';
+    var obj = JSON.parse(text);
+    document.getElementById('locations').innerHTML = "lat1: " + obj.locations[0].lat1 + "<br>"+
+    "lon1: " + obj.locations[0].lon1 + "<br>" +
+    "lat2: " + obj.locations[1].lat2 + "<br>" +
+    "lon2: " + obj.locations[1].lon2;
+  </script>
+
+</body>
+</html>
